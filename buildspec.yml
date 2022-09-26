@@ -28,4 +28,3 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - target/tweetApplication.jar
