@@ -7,7 +7,7 @@ phases:
       - mvn clean install
       - echo Logging in to Amazon ECR...
       - aws --version
-      - aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 568976187186.dkr.ecr.us-east-2.amazonaws.com
+      - aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 568976187186.dkr.ecr.us-west-1.amazonaws.com/iiht-tweetapp2-repo
       - TAG="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 8)"
       - IMAGE_URI=${REPOSITORY_URI}:${TAG}
   build:
