@@ -35,9 +35,9 @@ public class TweetAppApplication {
 		return new ApiInfo("Tweet APP Api",
 				"An application where user can post, like and comment a tweet, at the same time search users and their tweets.",
 				"1.0", "Free to use",
-				new springfox.documentation.service.Contact("Parichay Gupta", "https://github.com/parichaygupta",
-						"parichaygupta93@gmail.com"),
-				"PG license", "https://github.com/parichaygupta", Collections.emptyList());
+				new springfox.documentation.service.Contact("Sangam", "https://github.com/sangammelkunde",
+						"sangammelkunde@gmail.com"),
+				"PG license", "https://github.com/sangammelkunde", Collections.emptyList());
 	}
 	
 
