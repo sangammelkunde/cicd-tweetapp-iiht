@@ -1,0 +1,26 @@
+using System;
+using System.Linq;
+
+					
+public class Program
+{
+	public static void Main()
+	{
+        string[] array = { "key1:5", "key2:3", "key3:10", "key4:1" };
+
+        var sortedArray = array
+            .Select(pair =>
+            {
+                var splitPair = pair.Split(':');
+                return new { Key = splitPair[0], Value = int.Parse(splitPair[1]) };
+            })
+            .OrderBy(pair => pair.Value)
+            .Select(pair => pair.Key + ":" + pair.Value)
+            .ToArray();
+
+        foreach (var item in sortedArray)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
